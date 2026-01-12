@@ -1871,8 +1871,6 @@ body.is-preload #bg:before {
 	background-color: #000 !important;
 }
 
-
-
 /* === PERFECT LOGO CENTERING (ALL SCREENS) === */
 
 #header .logo {
@@ -1886,4 +1884,27 @@ body.is-preload #bg:before {
 	max-height: 100%;
 	object-fit: contain;
 	display: block;
+}
+
+/* === FIX TEXT POSITION UNDER LOGO (ALL SCREENS) === */
+
+#header .content .inner {
+	padding-top: 0 !important;
+}
+
+/* Text spacing fix */
+#header .brand-name,
+#header .slogan {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Mobile override */
+@media screen and (max-width: 736px) {
+
+	#header .brand-name,
+	#header .slogan {
+		margin-top: 0.4rem;
+		margin-bottom: 0.4rem;
+	}
 }
