@@ -1871,58 +1871,6 @@ body.is-preload #bg:before {
 	background-color: #000 !important;
 }
 
-/* === REAL FIX FOR DIMENSION TEMPLATE LOGO CENTERING === */
-
-#header .logo {
-	display: flex;
-	align-items: start;
-	justify-content: center;
-
-	/* ← مهم جدًا */
-}
-
-#header .logo img {
-	object-fit: contain;
-	display: block;
-}
-
-/* container الدايرة */
-.circle {
-	position: relative;
-	width: 150px;
-	/* مثال */
-	height: 150px;
-	/* مثال */
-	border-radius: 50%;
-	background: #eee;
-	/* لون تجريبي للدايرة */
-	overflow: hidden;
-}
-
-/* اللوجو */
-.circle .logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/* يثبت بالظبط في الوسط */
-	max-width: 70%;
-	/* حجم مناسب داخل الدايرة */
-	max-height: 70%;
-}
-
-/* الكلام تحت اللوجو */
-.circle .logo-text {
-	position: absolute;
-	bottom: 10px;
-	/* يثبت قريب من أسفل الدايرة */
-	width: 100%;
-	text-align: center;
-	font-size: 14px;
-}
-
-
-
 /* === FIX TEXT POSITION UNDER LOGO (ALL SCREENS) === */
 
 #header .content .inner {
