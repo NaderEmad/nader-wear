@@ -1870,3 +1870,26 @@ body.is-preload #footer {
 body.is-preload #bg:before {
 	background-color: #000 !important;
 }
+
+/* === FIX HEADER CENTERING (DESKTOP + MOBILE) === */
+
+#header {
+	min-height: 100vh;
+	justify-content: center;
+}
+
+#header>* {
+	margin-top: 0 !important;
+}
+
+#header>*:before {
+	display: none;
+}
+
+/* Mobile fine tuning */
+@media screen and (max-width: 736px) {
+	#header .content .inner {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
